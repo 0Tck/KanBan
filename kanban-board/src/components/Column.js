@@ -1,3 +1,7 @@
+/*
+This file describes each column of the kanban board.
+*/
+
 import React from 'react';
 import { useDrop } from 'react-dnd';
 import TaskCard from './TaskCard';

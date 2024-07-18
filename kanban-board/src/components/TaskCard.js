@@ -1,3 +1,7 @@
+/*
+This file describes each specific task card
+*/
+
 import React from 'react';
 import { useDrag } from 'react-dnd';
 

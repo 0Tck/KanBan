@@ -1,3 +1,7 @@
+/*
+This file describes search bar to search any specific task by the task name.
+*/
+
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setTasks } from '../redux/tasksSlice';
