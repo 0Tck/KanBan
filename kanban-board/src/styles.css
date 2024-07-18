@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide scrollbars */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 35px; /* Adjust padding */
+  background-color: #f8f9fa; /* Background color for header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  flex: 1; /* Grow to take available space */
+}
+
+.search-bar input {
+  width: 94%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.add-task-btn {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-task-btn:hover {
+  background-color: #0056b3;
+}
+
+.kanban-board {
+  display: flex;
+  flex: 1; 
+  padding: 20px;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+}
+
+.column {
+  flex: 1 1 200px; 
+  margin: 0 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto; 
+}
+
+.column h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.task {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative; 
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-actions {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.task:hover .task-actions {
+  display: flex; /* Show actions on hover */
+}
+
+.edit-task-btn,
+.delete-task-btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-task-btn {
+  background-color: #28a745; /* Green for edit */
+}
+
+.edit-task-btn:hover {
+  background-color: #218838;
+}
+
+.delete-task-btn {
+  background-color: #dc3545; /* Red for delete */
+}
+
+.delete-task-btn:hover {
+  background-color: #c82333;
+}
+
+.add-task-form {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 300px; 
+  max-height: calc(100vh - 40px); 
+}
+
+.add-task-form input,
+.add-task-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-task-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.add-task-form button:hover {
+  background-color: #0056b3;
+}
